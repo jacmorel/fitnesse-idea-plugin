@@ -1,0 +1,31 @@
+<idea-plugin version="2">
+    <name>Fitnesse Plugin</name>
+    <description>Plugin to integrate fitnesse</description>
+    <version>1.0</version>
+    <vendor>Fitnesse</vendor>
+    <idea-version since-build="90.0"/>
+
+    <application-components>
+        <!-- Add your application components here -->
+    </application-components>
+
+    <project-components>
+        <!-- Add your project components here -->
+    </project-components>
+
+    <module-components>
+        <component>
+            <interface-class>org.intellij.plugins.fitnesse.Configuration</interface-class>
+            <implementation-class>org.intellij.plugins.fitnesse.Configuration</implementation-class>
+            <option name="workspace" value="false"/>
+        </component>
+    </module-components>
+
+    <actions>
+        <!-- Add your actions here -->
+    </actions>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <gotoFileContributor implementation="org.intellij.plugins.fitnesse.NameProvider"/>
+    </extensions>
+</idea-plugin>
